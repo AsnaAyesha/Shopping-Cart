@@ -1,0 +1,29 @@
+ <section>
+    <div class="container mt-4">
+        <div class="row " style="margin-left: 4rem;">
+            <div class="col-md-6 col-md-offset-8 centered " style="margin-left: 10rem;">
+                <div>
+                    <h2 style=" margin: 2rem; text-align: center;">Login</h2>
+                </div>
+                <form action="\login" method="POST"enctype="multipart/form-data" >
+                {{#if loginErr}}
+                    <p class="error">{{loginErr}}</p>
+                {{/if}}
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control "  placeholder="email@example.com" name="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control "  name="Password" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <a href="/signup">Create new account?</a> 
+                  <button type="submit" class="btn btn-primary float-right   " style="margin-left: 30rem;margin-top: -3rem;"> Login</button>   
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</section> 
